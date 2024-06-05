@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
 
 <head>
   <meta charset="UTF-8">
@@ -10,24 +17,24 @@
     body {
       background-color: aquamarine;
     }
-    @media (max-width:319px) and (min-width:480px){
-      body{
+    @media (min-width:319px) and (max-width:480px){
+      html{
         background-color: lightsalmon;
       }
     }
-    @media (max-width:481px) and(min-width:1200px) {
-      body{
+    @media (min-width:481px) and(max-width:1200px) {
+      html{
         background-color: powderblue;
       }
       
     }
-    @media (max-width:1201px) and(min-width:1600px) {
-      body{
+    @media (min-width:1201px) and(max-width:1600px) {
+      html{
         background-color: limegreen;
       }
       
-    }@media (max-width:1601px)  {
-      body{
+    }@media (min-width:1601px)  {
+      html{
         background-color: seagreen;
       }
       
